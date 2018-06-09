@@ -21,6 +21,7 @@ class CreateRoom extends Component {
         this.setState({
             [name]: value
         });
+
     }
 
     handleSubmit(event) {
@@ -55,6 +56,8 @@ class CreateRoom extends Component {
                     </label>
                     <input type="submit" value="Create room"/>
                 </form>
+                <input name="connection" type="button" value="Back" onClick={this.props.handleButtons}/>
+
             </div>
         );
     }
