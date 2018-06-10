@@ -8,7 +8,7 @@ import Home from "./Home";
 import Connection from "./Connection";
 import JoinRoom from "./JoinRoom";
 import CreateRoom from "./CreateRoom";
-import Whiteboard from "./Whiteboard";
+import Session from "./Session";
 
 class Main extends Component {
     render() {
@@ -20,7 +20,7 @@ class Main extends Component {
 
                 <div className="content">
                     <Route exact path="/" component={Home}/>
-                    <Route path="/whiteboard" component={Whiteboard}/>
+                    <Route path="/session" component={Session}/>
                     <Route path="/connection" component={Connection}/>
                     <Route path="/joinroom" component={JoinRoom}/>
                     <Route path="/createroom" component={CreateRoom}/>

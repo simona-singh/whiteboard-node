@@ -10,7 +10,7 @@ class Home extends Component {
                 <h2>Welcome!</h2>
                 <p>This is my whiteboard app! Connect to a room or create your own to share the whiteboard
                     with others! Have a jolly good time :)</p>
-                <li><NavLink to="/whiteboard">Connect to a whiteboard!</NavLink></li>
+                <li><NavLink to="/session">Connect to a whiteboard!</NavLink></li>
             </div>
         );
     }

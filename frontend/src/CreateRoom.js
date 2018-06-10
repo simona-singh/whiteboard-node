@@ -10,7 +10,7 @@ class CreateRoom extends Component {
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this); //propTypes?
     }
 
     handleInputChange(event) {
@@ -27,6 +27,9 @@ class CreateRoom extends Component {
     handleSubmit(event) {
         alert('Room name: ' + this.state.room_name + '\nRoom password: ' + this.state.room_password);
         event.preventDefault();
+
+        this.props.setCreateRoomName(this.state.room_name);
+
     }
 
 
@@ -34,7 +37,6 @@ class CreateRoom extends Component {
         return (
             <div>
                 <p>Create room</p>
-                <p>Room name<br/>Password y/n<br/>Password<br/>Visible or search-only</p>
 
                 <form onSubmit={this.handleSubmit}>
                     <label>
@@ -64,3 +66,8 @@ class CreateRoom extends Component {
 }
 
 export default CreateRoom;
+
+// Room name
+// Password y/n
+// Password
+// Visible or search-only
