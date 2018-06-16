@@ -15,4 +15,12 @@ io.on('connection', function(socket){
     var room_name = 'default';
     socket.join(room_name);
 
+    socket.on('room name', function(socket) {
+        socket.leave(room_name);
+        room_name = room;
+        console.log('room name', room);
+        socket.join(room);
+        io.to(room).emit('room name', room);
+    });
+
 });

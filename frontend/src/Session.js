@@ -49,7 +49,7 @@ class Session extends Component {
 
     render() {
         if (this.state.create_room_name !== null) {
-            //this.createRoom(this.state.create_room_name);
+            this.createRoom(this.state.create_room_name);
         }
 
         return (
